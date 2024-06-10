@@ -1,0 +1,194 @@
+/* Global Styles */
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #000000;
+    overflow-x: hidden;
+    overflow-y: hidden; /* Add this line to hide the vertical scroll bar */
+}
+
+header {
+    background: linear-gradient(45deg, #00849b, #000661);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(45deg, #00849b, #000661);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+nav a:hover {
+    background: #00306e;
+}
+
+section {
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356);
+    z-index: 998;
+    overflow: hidden;
+}
+
+.about img,
+.portfolio-item img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.about p,
+.portfolio-item .description p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about,
+.portfolio-item .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.boxed-description,
+.boxed-about {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.parallax {
+    height: 500px;
+    background-image: url('https://i.imgur.com/dQk6uXA.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    background:linear-gradient(45deg, #00849b, #000661);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 2px solid #041a97;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.2);
+}
+
+.portfolio-item .description {
+    flex: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Contact Form Styles */
+
+.contact-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #00849b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #005e6e;
+}
+/* Global Styles */
+::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+body {
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Internet Explorer and Edge */
+}
